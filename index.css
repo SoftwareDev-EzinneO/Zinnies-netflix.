@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    display: flex;
+    background-color: black;
+
+}
+
+.navbar h1 {
+    padding-left: 150px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 50px;
+    color: red;
+}
+
+.navbtn button {
+    padding-bottom: 5px;
+    margin-left: 700px;
+    margin-top: 35px;
+    padding: 6px 8px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbtn button a {
+    color: white;
+}
+
+.heropage {
+    background-image: linear-gradient(rgba(0,0,0.3), rgba(0,0,0,0.3)), url(./assets/netflix.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+
+}.heropage h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.heropage p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.heropage button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     align-items: center;
+}
+.heropage button:hover {
+    background-color: #b0060a;
+   
+}
+.heropage button a {
+    color: white;
+    text-decoration: none;
+}
+.heropage button a:hover {
+    text-decoration: underline;
+}
+.heropage .social-icons {
+    margin-top: 20px;
+}
+.heropage .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+.heropage .social-icons a:hover {
+    color: #e50914;
+}
+.heropage .social-icons a i {
+    font-size: 1.5rem;
+}
+.heropage .social-icons a i:hover {
+    color: #e50914;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.form-container form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.form-container form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-container form button:hover {
+    background-color: #b0060a;
+}
+.form-container form a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+.form-container form a:hover {
+    text-decoration: underline;
+}
+.dashboard {
+    padding: 20px;
+}
+.dashboard h1 {
+    margin-bottom: 20px;
+}
+.dashboard .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.dashboard .stats .stat {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+.dashboard .stats .stat h2 {
+    margin-bottom: 10px;
+}
+.dashboard .stats .stat p {
+    font-size: 1.5rem;
+    color: #333;
+}
+.dashboard .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard .content .item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+}
+.dashboard .content .item h3 {
+    margin-bottom: 10px;
+}
+.dashboard .content .item p {
+    color: #333;
+}.dashboard .content .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.dashboard .content .item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.accordion .accordion-item {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.accordion .accordion-item .accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+}
+.accordion .accordion-item .accordion-content {
+    padding: 15px;
+    display: none;
+    color: #333;
+}
+.accordion .accordion-item.active .accordion-content {
+    display: block;
+}
+.accordion .accordion-item.active .accordion-header {
+    background-color: #b0060a;
+}
+.accordion .accordion-item .accordion-header:hover {
+    background-color: #b0060a;
+}
+
+.accordion .accordion-item .accordion-content p {
+    margin-bottom: 10px;
+}
+
+.accordion .accordion-item .accordion-content a {
+    color: #e50914;
+    text-decoration: none;
+}
+.accordion .accordion-item .accordion-content a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer p {
+    margin: 0;
+}
+.footer a {
+    color: #e50914;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.accordion .accordion-item .accordion-content a {
+    color: #e50914;
+    text-decoration: none;
+}
+.placeholder {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+.placeholder h2 {
+    margin-bottom: 10px;
+}
+.placeholder p {
+    color: #333;
+}
+.summary {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+.summary h2 {
+    margin-bottom: 10px;
+}
+.summary p {
+    color: #333;
+}
+.summary a {
+    color: #e50914;
+    text-decoration: none;
+}
+.summary a:hover {
+    text-decoration: underline;
+}
+.summary {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+.accordion .accordion-item .accordion-content a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.class placeholder {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
